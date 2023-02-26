@@ -30,7 +30,9 @@
             <li class="item">
               <a class="link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="item"><a class="link" href="./contacts.html">Contacts</a></li>
+            <li class="item">
+              <a class="link" href="./contacts.html">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="adr">
@@ -65,6 +67,56 @@
               <use href="./images/symbol-defs.svg#close-black"></use>
             </svg>
           </div>
+          <p class="modal-text">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="form">
+            <div class="form-fild">
+              <label class="form-label" for="name">Name</label>
+              <input type="text" class="form-input" name="name" id="name" />
+              <svg class="form-icon" width="12px" height="12px">
+                <use href="./images/symbol-defs.svg#person"></use>
+              </svg>
+            </div>
+            <div class="form-fild">
+              <label class="form-label" for="tel">Phone</label>
+              <input type="tel" class="form-input" name="tel" id="tel" />
+              <svg class="form-icon" width="13px" height="13px">
+                <use href="./images/symbol-defs.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="form-fild">
+              <label class="form-label" for="mail">Email</label>
+              <input type="email" class="form-input" name="mail" id="mail" />
+              <svg class="form-icon" width="15px" height="12px">
+                <use href="./images/symbol-defs.svg#mail"></use>
+              </svg>
+            </div>
+            <div class="form-fild">
+              <label class="form-label" for="comment">Comment</label>
+              <textarea
+                class="form-textarea"
+                name="comment"
+                id="comment"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <div class="accept">
+              <label class="form-label-accept">
+                <input
+                  class="checkbox visually-hidden"
+                  type="checkbox"
+                  name="policy"
+                  value="accept"
+                />
+                <span class="accept-icon"></span> I accept the terms and
+                conditions of the
+                <a class="accept-link" href="">Privacy Policy</a>
+              </label>
+            </div>
+            <button class="form-btn" type="submit">Send</button>
+          </form>
         </div>
       </div>
       <!-- секція 2 Our goals -->
@@ -426,6 +478,18 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="form-footer">
+          <p class="footer-text">Subscribe</p>
+          <form class="footer-form">
+            <input type="email" name="mail" placeholder="E-mail" />
+            <button class="footer-btn" type="submit">
+              <p class="text">Subscribe</p>
+              <svg class="footer-icon" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
