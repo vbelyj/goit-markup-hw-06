@@ -413,9 +413,17 @@ body {
 .checkbox:checked + .accept-icon {
   background-color: var(--active-button-color);
   border-color: var(--active-button-color);
-  background-image: url("/images/click.svg");
-  background-size: contain;
-  background-origin: border-box;
+}
+.checkbox:checked ~ .accept-checked {
+  opacity: 1;
+}
+.accept-checked {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  fill: var(--logo-footer-color);
+  opacity: 0;
 }
 .form-label-accept {
   font-size: 12px;
